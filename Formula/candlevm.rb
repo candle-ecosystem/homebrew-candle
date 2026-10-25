@@ -26,7 +26,7 @@ class Candlevm < Formula
   def install
     prefix.install Dir["*"]
     (prefix/"plugins").mkpath
-    bin.install_symlink prefix/"candlevm"
+    bin.install_symlink prefix/"candlevm" => "candlevm"
   end
 
   test do
